@@ -4,6 +4,11 @@
   height: 500px;
 }*/
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: Trump;
+  font-weight: lighter;
+}
+
 .info {
   padding: 6px 8px;
   font: 14px/16px Arial, Helvetica, sans-serif;
@@ -48,3 +53,56 @@ html, body, #map {
 body {
   font-family: 'Roboto', sans-serif;
 }
+
+/* App Header */
+
+#appHeader {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255,255,255,0.9);
+  box-shadow: 0px 2px 3px rgba(0,0,0,0.2);
+}
+
+#appHeader h1 {
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0px;
+  line-height: 3rem;
+}
+
+#appHeader span {
+  color: #26ABE3;
+}
+
+/* Zoom Controls */
+
+.leaflet-control-container > div:nth-child(1) {
+  background-color: red;
+}
+
+/* Info Widget */
+
+.leaflet-control-container > div:nth-child(2) {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  top: auto;
+}
+
+.leaflet-control-container > div:nth-child(2) .leaflet-control {
+  margin: 0;
+}
+
+/* Leaflet Link */
+
+.leaflet-control-container > div:nth-child(4) {
+  display: none;
+}
+
+
+
